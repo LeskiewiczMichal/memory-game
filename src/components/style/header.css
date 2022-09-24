@@ -1,0 +1,18 @@
+.header--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+
+    background-color: #0F7173;
+    box-shadow: 0 0 3px #9c9a9a;
+    color: #D8A47F;
+}
+
+.header--counter {
+    position: absolute;
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,25 @@
+.card--container {
+    display: flex;
+    flex-direction: column;
+
+    font-style: italic;
+    background-color: #EE4B6A;
+    border: 2px solid #DF3B57;
+    border-radius: 10px;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.card--image {
+    width: 200px;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.card--country-name {
+    margin: 10px;
+}
