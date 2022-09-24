@@ -5,22 +5,20 @@
 }
 
 body {
-  background-color: #D8A47F;
+  background-color: #d8a47f;
 }
 
 .app--container {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-
 }
 
 .app--cards-container {
-  flex:1;
+  flex: 1;
   padding: 15px;
   margin-top: 30px;
 
-  /* background-color: red; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

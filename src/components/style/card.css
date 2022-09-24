@@ -1,26 +1,26 @@
 .card--container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    font-style: italic;
-    background-color: #EE4B6A;
-    border: 2px solid #DF3B57;
-    border-radius: 10px;
+  font-style: italic;
+  background-color: #ee4b6a;
+  border: 2px solid #df3b57;
+  border-radius: 10px;
 
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 
-    font-size: 25px;
-    cursor: pointer;
+  font-size: 25px;
+  cursor: pointer;
 }
 
 .card--image {
-    width: 200px;
-    height: 180px;
-    border-radius: 10px;
-    background-color: #FFFFFF;
+  width: 200px;
+  height: 180px;
+  border-radius: 10px;
+  background-color: #ffffff;
 }
 
 .card--country-name {
-    margin: 10px;
+  margin: 10px;
 }

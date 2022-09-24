@@ -36,7 +36,7 @@ function App() {
   const [score, setScore] = useState(0);
   const [bestScore, setBestScore] = useState(0);
 
-
+  // create card element for each country
   const cards = countries.map((country) => {
     return (
       <Card
@@ -66,22 +66,23 @@ function App() {
   }
 
   // randomize render order
-  randomizeArr(cards)
+  randomizeArr(cards);
 
+  // if clickedCards contains name of the country you lose, else you continue playing
   function handleClick(name) {
     if (clickedCards.includes(name)) {
       setBestScore(score);
-      setScore(0)
-      setClickedCards([])
+      setScore(0);
+      setClickedCards([]);
     } else {
-      setClickedCards(prevClickedCards => [...prevClickedCards, name])
-      setScore(prevScore => prevScore + 1)
+      setClickedCards((prevClickedCards) => [...prevClickedCards, name]);
+      setScore((prevScore) => prevScore + 1);
     }
   }
 
   return (
     <div className="app--container">
-      <Header score={score} bestScore={bestScore}/>
+      <Header score={score} bestScore={bestScore} />
       <div className="app--cards-container">{cards}</div>
     </div>
   );
