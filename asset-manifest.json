@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/memory-game/static/css/main.49dc99ce.css",
+    "main.js": "/memory-game/static/js/main.2471bb70.js",
+    "static/js/787.69b12325.chunk.js": "/memory-game/static/js/787.69b12325.chunk.js",
+    "static/media/portugal.png": "/memory-game/static/media/portugal.f063a34c737dd70dfbd0.png",
+    "static/media/brazil.png": "/memory-game/static/media/brazil.2cb70d77a40a09604701.png",
+    "static/media/america.png": "/memory-game/static/media/america.c10f1a37c8e2a0a0b42b.png",
+    "static/media/south-korea.png": "/memory-game/static/media/south-korea.33e5cf95ffc13d322b6e.png",
+    "static/media/england.jpg": "/memory-game/static/media/england.429101586eb50ca638c8.jpg",
+    "static/media/turkish.png": "/memory-game/static/media/turkish.f4a29d89cdf4b5e73a4c.png",
+    "static/media/china.png": "/memory-game/static/media/china.1db2b30e49ea7a4787fd.png",
+    "index.html": "/memory-game/index.html",
+    "main.49dc99ce.css.map": "/memory-game/static/css/main.49dc99ce.css.map",
+    "main.2471bb70.js.map": "/memory-game/static/js/main.2471bb70.js.map",
+    "787.69b12325.chunk.js.map": "/memory-game/static/js/787.69b12325.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.49dc99ce.css",
+    "static/js/main.2471bb70.js"
+  ]
+}
