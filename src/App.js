@@ -32,16 +32,18 @@ function App() {
     { image: turkish, name: 'Turkish' },
     { image: ukraine, name: 'Ukraine' },
   ];
+  const [clickedCards, setClickedCards] = useState([]);
+  const [score, setScore] = useState(0);
+  const [bestScore, setBestScore] = useState(0);
 
-  // map through array of images and create card components from data
-  // randomize order of array
+
   const cards = countries.map((country) => {
     return (
       <Card
         image={country.image}
         countryName={country.name}
-        id={nanoid()}
         handleClick={handleClick}
+        key={nanoid()}
       />
     );
   });
@@ -63,18 +65,23 @@ function App() {
     return array;
   }
 
+  // randomize render order
   randomizeArr(cards)
 
-  // clickedCards [id of clicked cards]
-  const [clickedCards, setClickedCards] = useState([]);
-  // if clickedcards contains clicked card id lost else point +1
-  function handleClick(id) {
-    alert(id);
+  function handleClick(name) {
+    if (clickedCards.includes(name)) {
+      setBestScore(score);
+      setScore(0)
+      setClickedCards([])
+    } else {
+      setClickedCards(prevClickedCards => [...prevClickedCards, name])
+      setScore(prevScore => prevScore + 1)
+    }
   }
 
   return (
     <div className="app--container">
-      <Header />
+      <Header score={score} bestScore={bestScore}/>
       <div className="app--cards-container">{cards}</div>
     </div>
   );
